@@ -110,6 +110,10 @@
                 <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="phone" required>
             </div>
+            <div class="inputbox">
+                 <label for="alternatePhoNo">Alternate Phone Number</label>
+                 <input type="text" id="PhNo" name="PhNo" pattern="\d{10}" title="Phone Number Must Be In 10 Digits Only" required>
+            </div>
             
             <!-- Submit Button -->
             <button type="submit" class="submit-btn">Register</button>
@@ -128,6 +132,7 @@
 
         form.addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent the default form submission behavior
+
 
             // Display the success message
             successMessage.style.display = 'block';
